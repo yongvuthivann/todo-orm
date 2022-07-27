@@ -46,10 +46,10 @@ export class UsersService {
     return userId
   }
 
-  async findUsers(): Promise<UserEntity[]> {
-    const user = await this.userRepo.find()
-    return user
-  }
+  // async findUsers(): Promise<UserEntity[]> {
+  //   const user = await this.userRepo.find()
+  //   return user
+  // }
 
   async updateOne(id: string, imgPath: string): Promise<UserEntity> {
     const updateUser = await this.findOne(id)
