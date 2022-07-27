@@ -7,8 +7,8 @@ import { UserEntity } from "./models/user.entity";
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
-  @Get()
-  findUsers(): Promise<UserEntity[]> {
-    return this.usersService.findUsers()
-  }
+  // @Get()
+  // findUsers(): Promise<UserEntity[]> {
+  //   return this.usersService.findUsers()
+  // }
 }
